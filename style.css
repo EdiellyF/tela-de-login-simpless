@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/imagem-fundo.gif");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.tela-login {
+    top: 50%;
+    left: 50%;
+    height: 35em;
+    width: 40em;
+    border-radius: 0% 50% 50% 50%;
+    padding: 100px 80px;
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 20em;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #72cd72;
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    width: 20em;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #67b567;
+}
+
+@media only screen and (max-width: 768px) {
+    .tela-login {
+        padding: 10% 5%;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    input {
+        font-size: 0.8rem;
+    }
+    
+    button {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .tela-login {
+        border-radius: 0% 0% 50% 50%;
+    }
+}
